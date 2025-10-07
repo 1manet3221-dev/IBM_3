@@ -39,11 +39,16 @@ The first stage involves a set of fast, efficient machine learning models that p
 
 The output from the ML ensemble, along with the raw sensor data, is fed into SpikingBrain 1.0, a custom-built neuromorphic AI, for deeper, event-driven analysis.
 
-**What it is:** A specialized reasoning engine based on Spiking Neural Networks (SNNs). Unlike traditional AI models, SpikingBrain processes information in discrete events (or "spikes"), much like a biological brain.
-**How it works:** SpikingBrain is uniquely suited to interpret the temporal, time-series data coming from the IoT sensors. It doesn't just look at static numbers; it identifies complex patterns over time, such as the gradual onset of stress or the sudden shock of an anxiety event. It synthesizes the preliminary votes from the ML models with these temporal patterns to form a more nuanced conclusion.
-**Why it's important:** This approach offers two key advantages:
-**High Efficiency:** SNNs are computationally efficient, making them ideal for processing continuous data streams without high energy costs.
-**Temporal Insight:** It excels at understanding "when" things happen and how events relate to each other over time, moving beyond simple classification to provide a truly dynamic risk assessment. It can explain why it reached a conclusion and recommend a personalized course of action.
+**What it is:** 
+A specialized reasoning engine based on Spiking Neural Networks (SNNs). Unlike traditional AI models, SpikingBrain processes information in discrete events (or "spikes"), much like a biological brain.
+**How it works:** 
+SpikingBrain is uniquely suited to interpret the temporal, time-series data coming from the IoT sensors. It doesn't just look at static numbers; it identifies complex patterns over time, such as the gradual onset of stress or the sudden shock of an anxiety event. It synthesizes the preliminary votes from the ML models with these temporal patterns to form a more nuanced conclusion.
+**Why it's important:** 
+This approach offers two key advantages:
+**High Efficiency:** 
+SNNs are computationally efficient, making them ideal for processing continuous data streams without high energy costs.
+**Temporal Insight:** 
+It excels at understanding "when" things happen and how events relate to each other over time, moving beyond simple classification to provide a truly dynamic risk assessment. It can explain why it reached a conclusion and recommend a personalized course of action.
 
 ## 4. AuraChain: The Secure Blockchain Log
 
@@ -70,6 +75,6 @@ AuraChain is not a cryptocurrency. It is a private, in-memory **immutable ledger
     -   Handles real-time data ingestion.
     -   Executes the AI analysis pipeline (ML models and Gemini).
     -   Manages the AuraChain and logs new blocks.
--   **AI/ML:** Scikit-learn, TensorFlow Lite, Google Gemini
+-   **AI/ML:** Scikit-learn, TensorFlow Lite, SpikingBrain1.0
 -   **Data Visualization:** Recharts
 -   **IoT Device:** ESP32 with MAX30100 and DHT11 sensors.
