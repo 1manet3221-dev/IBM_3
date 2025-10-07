@@ -35,13 +35,15 @@ The first stage involves a set of fast, efficient machine learning models that p
 -   **How it works:** These models are trained to recognize patterns associated with specific conditions (e.g., normal, stress, fatigue). They each "vote" on the user's current state based on the incoming numbers.
 -   **Why it's important:** This provides an instant, preliminary assessment. It's the system's "reflex"—capable of flagging an immediate, obvious anomaly without the delay of a larger model.
 
-### Stage 2: Google Gemini (Advanced Reasoning)
+### Stage 2: SpikingBrain 1.0 (Neuromorphic Reasoning)
 
-The output from the ML ensemble, along with the raw data, is fed to a large language model (LLM) for deeper analysis.
+The output from the ML ensemble, along with the raw sensor data, is fed into SpikingBrain 1.0, a custom-built neuromorphic AI, for deeper, event-driven analysis.
 
--   **What it is:** Google's Gemini Pro model, used as a sophisticated reasoning engine.
--   **How it works:** Gemini doesn't just look at the numbers; it synthesizes them. It considers the votes from the ML models, the raw sensor data trends, the user's normal baseline, and any active reminders (e.g., "medication due"). It then generates a holistic, human-readable summary.
--   **Why it's important:** This moves beyond simple classification. The LLM can explain *why* it reached a conclusion (e.g., "High stress was detected due to an elevated heart rate combined with rapid breathing") and recommends a personalized, empathetic course of action (e.g., "Consider taking a short break and practicing deep breathing exercises.").
+What it is: A specialized reasoning engine based on Spiking Neural Networks (SNNs). Unlike traditional AI models, SpikingBrain processes information in discrete events (or "spikes"), much like a biological brain.
+How it works: SpikingBrain is uniquely suited to interpret the temporal, time-series data coming from the IoT sensors. It doesn't just look at static numbers; it identifies complex patterns over time, such as the gradual onset of stress or the sudden shock of an anxiety event. It synthesizes the preliminary votes from the ML models with these temporal patterns to form a more nuanced conclusion.
+Why it's important: This approach offers two key advantages:
+High Efficiency: SNNs are computationally efficient, making them ideal for processing continuous data streams without high energy costs.
+Temporal Insight: It excels at understanding "when" things happen and how events relate to each other over time, moving beyond simple classification to provide a truly dynamic risk assessment. It can explain why it reached a conclusion and recommend a personalized course of action.
 
 ## 4. AuraChain: The Secure Blockchain Log
 
